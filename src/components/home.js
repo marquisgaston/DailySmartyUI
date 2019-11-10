@@ -9,9 +9,9 @@ export default class Home extends Component {
       <div className='home'>
         <div className="ds-logo">
           <Logo />
+        </div>
           <SearchBar />
           <RecentPosts />
-        </div>
       </div>
     );
   }
