@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Logo from "./logo";
-import SearchBar from "./searchBar";
+import SearchBar from "./search-bar";
 import RecentPosts from "./recentPosts";
 
 export default class Home extends Component {
