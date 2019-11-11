@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class Post extends Component {
-    state = {  }
 
     renderTopics() {
         
@@ -16,12 +15,12 @@ class Post extends Component {
         let links = this.props.post_links.map((post_link, index) => {
             return (
                 <div className="post-link" key={index}>
-                <div className="post-link__box">
+                    <div className="post-link__box">
 
-                </div>
-                <div className="post-link__link">
-            <a href={post_link.post_url}>useful links{index + 1}</a>
-                </div>
+                    </div>
+                    <div className="post-link__link">
+                        <a href={post_link.link_url}>useful links{index + 1}</a>
+                    </div>
             </div>
             )
         })

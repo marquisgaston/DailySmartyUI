@@ -17,15 +17,15 @@ export function fetchRecentPosts() {
     }
 }
 
-export function fetchPostsWithQuery(query) {
+export function fetchPostsWithQuery(query, callBack) {
     return function (dispatch) {
         axios.get(`https://api.dailysmarty.com/search?q=${query}`)
         .then(repsonse => {
-            console.log(repsonse.data.posts);
             dispatch({
                 type: SET_RESULTS_POSTS,
                 payload: repsonse.data.posts
             })
+            if (callBack) {callBack()};
         })
     }
 }
