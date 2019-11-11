@@ -7,8 +7,7 @@ class SearchBar extends Component {
 
     handleFormSubmit = function ({query}) {
         event.preventDefault();
-        console.log("trying to handle submit for query", query);
-        this.props.history.push('/results');
+        this.props.onSubmit(query);
     }
 
     state = {  }
