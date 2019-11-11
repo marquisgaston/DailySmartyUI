@@ -6,7 +6,7 @@ export function fetchRecentPosts() {
     return function (dispatch) {
         axios.get('https://api.dailysmarty.com/posts')
         .then(repsonse => {
-            console.log(repsonse.data.posts);
+            
             dispatch({
                 type: SET_RECENT_POSTS,
                 payload: repsonse.data.posts
@@ -15,3 +15,14 @@ export function fetchRecentPosts() {
         })
     }
 }
+
+export function fetchPostsWithQuery(query) {
+    return function (dispatch) {
+        axios.get(`https://api.dailysmarty.com/search?q=${query}`)
+        .then(repsonse => {
+            console.log(repsonse.data.posts);
+            
+        })
+    }
+}
+

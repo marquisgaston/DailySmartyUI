@@ -4,7 +4,7 @@ class Post extends Component {
     state = {  }
 
     renderTopics() {
-        console.log("topics", this.props.associated_topics);
+        
         let topics = this.props.associated_topics.map((topic, index) => {
             return <span className="post-topic" key={index}>{topic}</span>
         })
