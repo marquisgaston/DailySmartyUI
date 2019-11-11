@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import {Link} from 'react-router-dom';
+
 class Logo extends Component {
     state = {  }
     render() { 
@@ -8,7 +10,9 @@ class Logo extends Component {
             width: this.props.sizeW ? this.props.sizeW : 170 }
         return ( 
             <div className="logo-main">
-                <img style= {size} src="/assets/ds_circle_logo.png" alt="daily smarty logo"/> 
+                <Link to="/">
+                    <img style= {size} src="/assets/ds_circle_logo.png" alt="daily smarty logo"/> 
+                </Link>
             </div>
          );
     }
