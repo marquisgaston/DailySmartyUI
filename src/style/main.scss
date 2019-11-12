@@ -1,7 +1,9 @@
 @import "./logo.scss";
+@import "./search-bar.scss";
 
 html {
-    font-size: 62.5%; // 1rem is 10px
+    font-size: 62.5%; // 1rem is 10px;
+    font-family: 'Lato' sans-serif;
 }
 
 *,
@@ -23,12 +25,38 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.home, .results {
+.app-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.home {
     margin-top: 2rem;
     display: grid;
     justify-items: center;
+    align-content: space-around;
+    font-family: 'Lato' sans-serif;
+    height: 100vh;
+    width: 66vw;
+}
+
+.results {
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+    font-family: 'Lato' sans-serif;
 }
 
 .post-topic {
     margin: 0 4px;
+}
+
+.recent-posts__wrapper {
+    width: 600px;
+    height: 120px;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
 }
