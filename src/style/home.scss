@@ -1,0 +1,6 @@
+.home {
+    @include default-page-layout();
+    align-content: space-around; 
+    height: 100vh;
+    width: 66vw;
+}

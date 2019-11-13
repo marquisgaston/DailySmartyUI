@@ -1,6 +1,10 @@
+@import "./mixins.scss";
 @import "./logo.scss";
 @import "./search-bar.scss";
 @import "./recentPosts.scss";
+@import "./posts.scss";
+@import "./results.scss";
+@import "./home.scss";
 
 html {
     font-size: 62.5%; // 1rem is 10px;
@@ -31,23 +35,6 @@ body {
     justify-content: center;
 }
 
-.home {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-    align-content: space-around;
-    font-family: 'Lato' sans-serif;
-    height: 100vh;
-    width: 66vw;
-}
-
-.results {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-    font-family: 'Lato' sans-serif;
-}
-
-.post-topic {
-    margin: 0 4px;
-}
+// .home, .results {
+//     @include default-page-layout();
+// }
