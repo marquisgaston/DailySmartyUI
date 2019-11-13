@@ -1,0 +1,28 @@
+.recent-posts {    
+    display: grid;
+    align-content: center;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .recent-posts__wrapper {
+        display: grid;
+        grid-row-gap: 12px;
+        width: 100%;
+    }
+
+    .recent-posts__heading {
+        color: skyblue;
+        font-size: 14px;
+    }
+    .recent-posts__posts {
+        display:grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 43px;
+    }
+
+}

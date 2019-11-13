@@ -10,10 +10,8 @@ class SearchBar extends Component {
         this.props.onSubmit(query);
     }
 
-    state = {  }
-
     renderInput(field) {
-        return <input type="text" placeholder="Search DaiysSmarty" {...field.input} />
+        return <input type="text" placeholder="&#xf002; Search DaiysSmarty" {...field.input} />
     }
 
     render() { 

@@ -1,5 +1,6 @@
 @import "./logo.scss";
 @import "./search-bar.scss";
+@import "./recentPosts.scss";
 
 html {
     font-size: 62.5%; // 1rem is 10px;
@@ -49,14 +50,4 @@ body {
 
 .post-topic {
     margin: 0 4px;
-}
-
-.recent-posts__wrapper {
-    width: 600px;
-    height: 120px;
-
-    display: grid;
-    justify-content: center;
-    align-content: center;
-
 }
