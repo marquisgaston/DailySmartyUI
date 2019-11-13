@@ -1,6 +1,6 @@
 @mixin default-page-layout {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-    font-family: 'Lato' sans-serif;
+   height: 100vh;
+   width: 66vw;
+   display: grid;
+   align-content: space-around;
 }

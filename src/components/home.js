@@ -23,7 +23,7 @@ class Home extends Component {
         <div className="ds-logo">
           <Logo />
         </div>
-          <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)} />
+          <SearchBar page="home" onSubmit={(query) => this.handleSearchBarSubmit(query)} />
           <RecentPosts />
       </div>
     );
