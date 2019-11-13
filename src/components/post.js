@@ -21,21 +21,21 @@ class Post extends Component {
 
     getNameForPostLink(str) {
         var n = str.lastIndexOf('/');
-        var name = str.substring(n + 1, str.length);
+        var link = str.substring(n + 1, str.length);
         
         if((n+1) == str.length) {
-           name = str.slice(0, n);
-           n = name.lastIndexOf('/');
-           name = str.substring(n + 1, str.length - 1);
+           link = str.slice(0, n);
+           n = link.lastIndexOf('/');
+           link = str.substring(n + 1, str.length - 1);
         } 
 
-        if (name.includes('.html')){
-            name = name.substring(0, name.length - 5);
+        if (link.includes('.html')){
+            link = link.substring(0, link.length - 5);
         }
-        if (name.includes('.htm')){
-            name = name.substring(0, name.length - 4);
+        if (link.includes('.htm')){
+            link = link.substring(0, link.length - 4);
         }
-        return name;
+        return link;
     }
 
     renderLinks() {
@@ -52,7 +52,9 @@ class Post extends Component {
             </div>
             )
         })
-        
+        if (links == 0){
+            return <div className="no-content">No Useful Links</div>
+        }
         return links
     }
 
